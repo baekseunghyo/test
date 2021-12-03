@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bteam.project.mapper.MainMapper">
+	<!-- 회원가입 -->
+	<insert id="joinSite" >
+		INSERT INTO `user`(uid,upw,uname,uage,uaddress,umobile,point,roleName)
+		VALUES(#{uid},#{upw},#{uname},#{uage},#{uaddress},#{umobile},500,'ROLE_USER')
+	</insert>
+	
+	<!-- ID 중복 확인 -->
+	<select id="checkSelectUser" parameterType="String" resultType="int">
+		SELECT count(*)
+		FROM user
+		WHERE uid=#{uid}
+	</select>
+	
+	<!-- 이게 뭐야? -->
+	<select id ="selectByIdPw" parameterType="map" resultType="map">
+		SELECT *
+		FROM `user`
+		WHERE uid=#{uid}, upw=#{upw}
+	</select>
+	
+	<select id="selectBySname" parameterType="String" resultType="map">
+		SELECT *
+		FROM `shop`
+		WHERE sname =#{sname}
+	</select>
+	
+	<!-- 마이페이지 포인트 검색 -->
+	<select id="selectByPoint" parameterType="Integer" resultType="int">
+		SELECT point
+		FROM `user`
+		WHERE idx=#{uidx}
+	</select>
+
+
+</mapper>

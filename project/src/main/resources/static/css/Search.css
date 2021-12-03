@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/*------------      헤더영역      ------------*/
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-family: "나눔스퀘어";
+}
+
+.header_wrap {
+	width: 1048px;
+	margin: auto;
+	text-align: center;
+}
+
+.logoAndLogin {
+	display: flex;
+	padding: 20px 0;
+}
+
+.logo_wrap {
+	margin-right: 50px;
+}
+
+ #logoImg{
+        	width : 50px;
+        	height : 50px;
+        }
+.logo {
+	text-decoration: none;
+	font-size: xx-large;
+	font-weight: bolder;
+	margin-left: 10px;
+	color: black;
+}
+
+.login {
+	margin-left: auto;
+	display: inline-block;
+}
+
+.Btn-line {
+	background-color: white;
+	border: 1px solid #47597E;
+	color: #47597E;
+	width: 100px;
+	height: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Btn-line:hover {
+	border: 1px solid #293B5F;
+	color: #293B5F;
+	background-color: #FFF7E0;
+}
+
+.Btn-color {
+	background-color: #47597E;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Btn-color:hover {
+	background-color: #293B5F;
+}
+
+.category {
+	display: flex;
+	margin: 0;
+}
+
+.cateBtn {
+	width: 180px;
+	height: 40px;
+	font-size: large;
+	background-color: #47597E;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.cateBtn:hover {
+	background-color: #293B5F;
+}
+
+.category_hair, .category_nail, .category_massage {
+	display: inline-block;
+}
+
+#category_hair {
+	border-top-left-radius: 10px;
+}
+
+#category_nail {
+	margin-left: -6px;
+}
+
+#category_massage {
+	border-top-right-radius: 10px;
+	margin-left: -6px;
+}
+
+/*------------      컨텐츠영역      ------------*/
+section {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.searchArea {
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	background-color: #293B5F
+}
+
+#searchBox {
+	width: 400px;
+	height: 30px;
+	margin: auto;
+}
+
+#searchBtn {
+	width: 100px;
+	height: 35px;
+	padding-bottom: 6px;
+	border: 1px solid #47597E;
+	border-radius: 2px;
+	background-color: white;
+	font-size: large;
+	font-weight: bold;
+	color: #47597E;
+	cursor: pointer;
+}
+
+#searchBtn:hover {
+	background-color: #FFF7E0;
+	border: 1px solid #293B5F;
+	color: #293B5F;
+}
+
+.sidebarWrap {
+	width: 100%;
+	height: 100% s;
+	display: flex;
+}
+
+.sidebar_location {
+	height: 60px;
+	border: 1px solid #47597E;
+	background-color: #47597E;
+}
+
+select {
+	margin: 15px 25px;
+	width: 200px;
+	height: 30px;
+	font-family: inherit;
+	font-size: large;
+	cursor: pointer;
+}
+
+.sortArea {
+	width: 250px;
+	height: 100%;
+	position: relative;
+}
+
+.sidebar_filter {
+	height: 100%;
+	background-color: #293B5F;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sort {
+	font-size: large;
+	font-weight: bold;
+	padding: 30px;
+	color: white;
+}
+
+.sortTable {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	color: #FFF7E0;
+}
+
+label {
+	cursor: pointer;
+}
+
+.somethin {
+	height: 200px;
+}
+
+.resultArea {
+	width: 85%;
+	height: 543px;
+	overflow: scroll;
+}
+
+.resultArea::-webkit-scrollbar {
+	width: 10px;
+}
+
+.resultArea::-webkit-scrollbar-thumb {
+	background-color: #47597E;
+}
+
+.resultArea::-webkit-scrollbar-track {
+	background-color: #FFF7E0;
+}
+
+.resultBox {
+	width: 85%;
+	height: 200px;
+	padding: 20px;
+	margin: 20px auto;
+	border: 1px solid black;
+}
+
+.resultBox:hover {
+	background-color: #FFF7E0;
+	cursor: pointer;
+}
+
+.result_null {
+	font-size: 20px;
+	color: #47597E;
+	text-align: center;
+	margin-top: 100px;
+}
+
+img {
+	width: 180px;
+	height: 150px;
+}
+
+.textShop {
+	width: 600px;
+	font-size: xx-large;
+	margin: auto;
+	margin-top: -100px;
+	text-align: center;
+}
+
+.infoBox {
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #47597E;
+	color: #FFF7E0;
+	margin: 5px;
+	display: inline-block;
+	float: right;
+}
+
+.viewCount {
+	width: 100px;
+	height: 20px;
+	color: #47597E;
+	text-align: center;
+	margin: auto;
+	margin-top: 10px;
+}
+
+/*------------      푸터영역      ------------*/
+footer {
+	width: 100%;
+	background-color: dimgray;
+	color: white;
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	display: inline;
+	padding: 10px;
+}
+
+.info_footer{
+            text-align : center;
+        }

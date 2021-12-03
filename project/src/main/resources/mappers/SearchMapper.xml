@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bteam.project.mapper.SearchMapper">
+	
+	<!-- 업체 조회 -->
+	<select id="selectByShop" parameterType="map" resultType="map">
+		SELECT *
+		FROM shop
+		 <if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+	</select>
+	
+	
+	<!-- 지역별 조회 -->
+	<select id="selectByLocation" parameterType="map" resultType="map">
+		SELECT *
+		FROM shop
+		 <if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+		 <if test="saddress != null and saddress !=''">
+				AND
+				`saddress`= '${saddress}'
+		 </if>
+	</select>
+	
+	<!-- 조회수 높은 순 조회 -->
+	<select id="selectTopView1" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+		 <if test="saddress != null and saddress !=''">
+				AND
+				`saddress`= '${saddress}'
+		 </if>
+			ORDER BY `view` desc
+	</select>
+	
+	<select id="selectTopView2" parameterType="map" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+			ORDER BY `view` desc
+	</select>
+	
+	<!-- 조회수 낮은 순 조회 -->
+	<select id="selectBottomView1" parameterType="map" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+		 <if test="saddress != null and saddress !=''">
+				AND
+				`saddress`= '${saddress}'
+		 </if>
+			ORDER BY `view` asc
+	</select>
+	
+	<select id="selectBottomView2" parameterType="map" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+			ORDER BY `view` asc
+	</select>
+	
+	<!-- 가격 높은 순 조회 -->
+	<select id="selectTopPrice1" parameterType="map" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+		 <if test="saddress != null and saddress !=''">
+				AND
+				`saddress`= '${saddress}'
+		 </if>
+			ORDER BY `price` desc
+	</select>
+	
+	<select id="selectTopPrice2" parameterType="map" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+			ORDER BY `price` desc
+	</select>
+	
+	<!-- 가격 낮은 순 조회 -->
+	<select id="selectBottomPrice1" parameterType="map" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+		 <if test="saddress != null and saddress !=''">
+				AND
+				`saddress`= '${saddress}'
+		 </if>
+			ORDER BY `price` asc
+	</select>
+	
+	<select id="selectBottomPrice2" parameterType="map" resultType="map">
+			SELECT *
+			FROM  `shop`
+			<if test="searchText != null and searchText !=''">
+			WHERE (
+				`stype` LIKE CONCAT('%', #{searchText}, '%')
+				OR
+				`sname` LIKE CONCAT('%', #{searchText}, '%')
+			)
+		 </if>
+			ORDER BY `price` asc
+	</select>
+
+</mapper>

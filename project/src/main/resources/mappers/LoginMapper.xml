@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bteam.project.mapper.LoginMapper">
+	<resultMap type="com.bteam.project.bean.User" id="UserMap">
+		<result property="idx" column="idx"/>
+		<result property="uid" column="uid"/>
+		<result property="upw" column="upw"/>
+		<result property="uname" column="uname"/>
+		<result property="uage" column="uage"/>
+		<result property="uaddress" column="uaddress"/>
+		<result property="umobile" column="umobile"/>
+		<result property="point" column="point"/>
+		<result property="roleName" column="roleName"/>
+	</resultMap>
+
+	<select id="SelectUserByIdAndPassword" parameterType="hashmap" resultMap="UserMap">
+			SELECT
+				`idx`, 
+				`uid`, 
+				`upw`, 
+				`uname`,
+				`uage`,
+				`uaddress`,
+				`umobile`,
+				`point`,
+				`roleName`
+			FROM 
+				`user`
+			WHERE 
+				`uid` = #{uid}
+				AND `upw` = #{upw}
+	</select>
+	
+	<select id="selectForId" parameterType="map" resultType="String">
+		SELECT uid
+		FROM `user`
+		WHERE uname=#{uname}
+			AND umobile=#{umobile}
+	</select>
+	
+	<select id="selectForPw" parameterType="map" resultType="String">
+		SELECT upw
+		FROM `user`
+		WHERE uid=#{uid}
+			AND uname=#{uname}
+	</select>
+</mapper>

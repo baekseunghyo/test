@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/*------------      헤더영역      ------------*/
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-family: "나눔스퀘어";
+}
+
+.header_wrap {
+	width: 1048px;
+	margin: auto;
+	text-align: center;
+}
+
+.logoAndLogin {
+	display: flex;
+	padding: 35px 0;
+}
+
+.logo_wrap {
+	margin-right: 50px;
+}
+
+ #logoImg{
+        	width : 50px;
+        	height : 50px;
+        }
+
+.logo {
+	text-decoration: none;
+	font-size: xx-large;
+	font-weight: bolder;
+	margin-left: 10px;
+	color: black;
+}
+
+.login {
+	margin-left: auto;
+	display: inline-block;
+}
+
+.Btn-line {
+	background-color: white;
+	border: 1px solid #47597E;
+	color: #47597E;
+	width: 100px;
+	height: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Btn-line:hover {
+	border: 1px solid #293B5F;
+	color: #293B5F;
+	background-color: #FFF7E0;
+}
+
+.Btn-color {
+	background-color: #47597E;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Btn-color:hover {
+	background-color: #293B5F;
+}
+
+.header-line {
+	width: 200px;
+	border: 15px solid #DBE6FD;
+	margin: -45px 0 20px 410px;
+}
+
+/*------------      컨텐츠영역      ------------*/
+section {
+	width: 100%;
+	height: 100%;
+}
+
+.divide_line {
+	width: 100%;
+	height: auto;
+	padding: 5px 0;
+	background-color: #47597E;
+}
+
+h3 {
+	color: white;
+	margin-left: 50px;
+}
+
+.userTbl {
+	margin-left: 50px;
+	padding: 30px;
+}
+
+.userTbl>th {
+	font-size: large;
+}
+
+.border-line {
+	border: 1px solid #DBE6FD;
+	padding: 0;
+}
+
+.reservInfo {
+	border: 1px solid black;
+	margin: 5px 50px;
+	display: flex;
+}
+
+.infoTbl {
+	width: 550px;
+	margin: 20px;
+	padding: 10px;
+	background-color: #DBE6FD;
+}
+
+.BtnArea {
+	width: 600px;
+	height: 100px;
+	margin: 10px;
+	line-height: 100px;
+	dlsplay: inline;
+}
+
+.reservation_null {
+	text-align: center;
+	margin-top: 100px;
+	font-size: 20px;
+	color: #47597E;
+}
+
+/*------------      팝업창      ------------*/
+.pop {
+	display: none;
+}
+
+.pop {
+	width: 300px;
+	height: 150px;
+	border: 1px solid #47597E;
+	position: absolute;
+	top: 72%;
+	left: 56%;
+	margin: -250px 0 0 -250px;
+	background-color: #fff;
+	z-index: 2;
+	text-align: center;
+}
+
+.popBtn {
+	margin: 10px;
+}
+
+.backon {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #00000054;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}

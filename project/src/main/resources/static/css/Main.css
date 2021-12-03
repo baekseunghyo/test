@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*------------      헤더영역      ------------*/
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            font-family: "나눔스퀘어";
+        }
+        .header_wrap{
+            width: 1048px;
+            margin: auto;
+            text-align: center;
+        }
+        .logoAndLogin{
+            display: flex;
+            padding: 35px 0;
+        }
+        .logo_wrap{
+            margin-right: 50px;
+        }
+        #logoImg{
+        	width : 50px;
+        	height : 50px;
+        }
+        .logo{
+            text-decoration: none;
+            font-size: xx-large;
+            font-weight: bolder;
+            margin-left: 10px;
+            color: black;
+        }
+        .login{
+            margin-left: auto;
+            display: inline-block;
+        }
+        .Btn-line{
+            background-color: white;
+            border: 1px solid #47597E;
+            color: #47597E;
+            width: 100px;
+            height: 40px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        .Btn-line:hover{
+            border: 1px solid #293B5F;
+            color: #293B5F;
+            background-color: #FFF7E0;
+        }
+        .Btn-color{
+            background-color: #47597E;
+            border: none;
+            color: white;
+            width: 100px;
+            height: 40px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        .Btn-color:hover{
+            background-color: #293B5F;
+        }
+        .category{
+            display: flex;
+            margin: 0;
+        }
+        .cateBtn{
+            width: 180px;
+            height: 40px;
+            font-size: large;
+            background-color: #47597E;
+            border: none;
+             color: white;
+             cursor:pointer;
+        }
+        .cateBtn:hover{
+            background-color: #293B5F;
+        }
+        .category_hair,.category_nail,.category_massage{
+            display: inline-block;
+        }
+        #category_hair{            
+            border-top-left-radius: 10px;
+        }
+        #category_nail{
+            margin-left: -6px;
+        }     
+        #category_massage{
+            border-top-right-radius: 10px;
+            margin-left: -6px;
+        }
+       
+
+/*------------      컨텐츠영역      ------------*/
+
+		
+        section{
+            width: 100%;
+            height: 350px;
+            background-image: url('/img/img20211102.jpg'); 
+            background-position : 70% 65%;
+            position : relative;
+        }
+		.back:after{
+			content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+		
+		}
+        .searchArea{
+            text-align: center;
+            line-height: 150px;
+            position: relative;
+			z-index: 1;
+        }
+        .text_span{
+        	font-size: 30px;
+        	color:white;
+        	text-shadow : 1px 2px 4px midnightblue;
+        }
+        .border-line{
+        	border : 1px solid white;
+        	width : 400px;
+        	margin : auto;
+        }
+        #searchBox{
+            width: 400px;
+            height: 30px;
+            margin: auto;
+        }
+        #searchBtn{
+            width: 100px;
+            height: 35px;
+            padding-bottom: 6px;
+            border: 1px solid #47597E;
+            border-radius: 2px;
+            background-color: white;
+            font-size: large;
+            font-weight: bold;
+            color: #47597E;
+            cursor:pointer;
+        }
+        #searchBtn:hover{
+           background-color: #FFF7E0;
+           border: 1px solid #293B5F;
+           color: #293B5F;
+        }
+
+        .iconzone{
+            text-align: center;
+            margin-top: 65px;
+        }
+        .part{
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        img{
+        	 width: 120px;
+        	 height: 120px;
+        	 margin-bottom: 5px;
+        }
+        
+        span{
+        	font-size : large;
+        	color : #293B5F;
+        }
+        .border-tag{
+        	width : 60px;
+        	height : 20px;
+        	background-color : #DBE6FD;
+        	margin : auto;
+        	margin-top : -14px;
+        }

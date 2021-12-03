@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bteam.project.mapper.ShopMapper">
+	
+		<!-- 페이지 조회수 저장 -->	 
+	<update id="updateViewCount" parameterType="Integer">
+		 	UPDATE shop
+		 	SET `view` = `view`+1
+		 	WHERE idx=#{sid}
+	</update>
+	
+		<!-- 상세페이지 검색 -->
+	<select id="shopDetail" parameterType="Integer" resultType="map">
+		SELECT *
+		FROM shop
+		WHERE idx=#{sid}
+	</select>
+	
+		<!-- 리뷰 검색 -->
+	<select id="selectReview" parameterType="Integer" resultType="map">
+		SELECT review.idx, user.uname, review.comment, review.writeTime
+		FROM review INNER JOIN user
+		ON user.idx = review.uidx
+		WHERE sidx = #{sid}
+	</select>
+	
+		<!-- 리뷰 등록 -->
+	<insert id="insertReview" parameterType="map">
+		INSERT INTO `review` (uidx, sidx, comment)
+		VALUES (#{uidx},#{sidx},#{comment})
+	</insert>
+	
+	<!-- 예약 -->
+	<insert id="insertReservation" parameterType="map">
+		INSERT INTO `reservation` (uidx, sidx, date, time, deposit)
+		VALUES (#{uidx},#{sidx},#{date},#{time},#{deposit})
+	</insert>
+	
+	<!-- 예약 결제 -->
+	<update id="updateDeposit" parameterType="map">
+		UPDATE user
+		SET point = point-#{price}
+		WHERE idx = #{uidx}
+	</update>
+	
+	<!-- 마이페이지 예약 내역 검색 -->
+	<select id="selectReservationByuidx" parameterType="Integer" resultType="map">
+		SELECT shop.idx, shop.sname, reservation.date, reservation.time, reservation.deposit
+		FROM reservation INNER JOIN shop
+		ON shop.idx = reservation.sidx
+		WHERE uidx=#{uidx}
+	</select>
+	
+	<!-- 상세페이지 예약 내역 검색 -->
+	<select id="selectReservationBysidx" parameterType="map" resultType="map">
+		SELECT time
+		FROM reservation
+		WHERE sidx=#{sidx}
+			AND date=#{date}
+	</select>
+	<!-- 예약 변경 -->
+	<select id="selectReservationForChange" parameterType="map" resultType="map">
+		SELECT *
+		FROM reservation
+		WHERE sidx=#{sidx}
+			AND date=#{date}
+			AND time=#{time}
+	</select>
+	
+	<update id="updateReservation" parameterType="map">
+		UPDATE reservation
+		SET date=#{changeDate}, time=#{changeTime}
+		WHERE uidx=#{uidx}
+			AND sidx=#{sidx}
+			AND date=#{date}
+			AND time=#{time}
+	</update>
+	
+	<!-- 예약 취소 -->
+	<update id="updatePoint" parameterType="map">
+		UPDATE user
+		SET point = point+(SELECT price
+							FROM shop
+							WHERE idx = #{sidx})
+		WHERE idx = #{uidx}
+	</update>
+	<delete id="deleteReservation" parameterType="map">
+		DELETE FROM reservation
+		WHERE sidx=#{sidx}
+			AND uidx=#{uidx}
+			AND date=#{date}
+			AND time=#{time}
+	</delete>
+</mapper>

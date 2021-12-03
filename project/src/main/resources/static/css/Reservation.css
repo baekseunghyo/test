@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+/*------------      헤더영역      ------------*/
+body {
+	margin: 0 50px;
+	padding: 0;
+	height: 100%;
+	display: block;
+	font-family: "나눔스퀘어";
+}
+
+header {
+	width: 1048px;
+	margin: auto;
+	text-align: center;
+}
+
+.logoAndLogin {
+	display: flex;
+	padding: 20px 0;
+}
+
+.logo_wrap {
+	margin-right: 50px;
+}
+
+ #logoImg{
+        	width : 50px;
+        	height : 50px;
+        }
+
+.logo {
+	text-decoration: none;
+	font-size: xx-large;
+	font-weight: bolder;
+	margin-left: 10px;
+	color: black;
+}
+
+.login {
+	margin-left: auto;
+	display: inline-block;
+}
+
+.logo {
+	text-decoration: none;
+	font-size: xx-large;
+	font-weight: bolder;
+	margin-left: 10px;
+	color: black;
+}
+
+.login {
+	margin-left: auto;
+	display: inline-block;
+}
+
+.Btn-line {
+	background-color: white;
+	border: 1px solid #47597E;
+	color: #47597E;
+	width: 100px;
+	height: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Btn-line:hover:enabled {
+	border: 1px solid #293B5F;
+	color: #293B5F;
+	background-color: #FFF7E0;
+}
+
+.Btn-line:disabled {
+	color: gray;
+	border: 1px solid gray;
+	cursor: not-allowed;
+}
+
+.Btn-color {
+	background-color: #47597E;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Btn-color:hover {
+	background-color: #293B5F;
+}
+
+/*------------      섹션영역      ------------*/
+.shopInfoArea {
+	height: 200px;
+	background-color: #47597E;
+	display: flex;
+	color: #FFF7E0;
+}
+
+img {
+	width: 240px;
+	height: 200px;
+}
+
+.nameAndInfoArea {
+	margin: 0 20px;
+	padding: 0;
+	width: 600px;
+	height: 200px;
+	line-height: 60px;
+}
+
+.border-line {
+	border: 1px solid #FFF7E0;
+	width: 200px;
+}
+
+.phone{
+	width : 200px;
+	height : 30px;
+	font-size : 20px;
+	margin-left : -320px;
+	margin-top : 40px;
+}
+.shopPrice{
+	font-size : 35px;
+	margin-top : 140px;
+	margin-left : 400px;
+}
+
+.infoBoxArea {
+	margin-top: 10px;
+}
+
+.infoBox {
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #FFF7E0;
+	color: #47597E;
+	margin: 3px;
+	display: inline-block;
+}
+
+.reservationArea {
+	position: relative;
+	height: auto;
+	width: 1048px;
+	margin: auto;
+}
+
+.selectBox {
+	width: 230px;
+	background-color: #47597E;
+	position: absolute;
+	float: right;
+	top: 33%;
+	right: 30px;
+	padding: 20px;
+	text-align: center;
+}
+
+.dateBox {
+	color: white;
+	font-weight: bold;
+	font-size: large;
+	display: block;
+}
+
+#selectDate {
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+	width: 203px;
+	height: 28px;
+}
+
+select {
+	width: 205px;
+	height: 30px;
+	margin: 10px;
+}
+
+.choiceBtn {
+	display: inline-block;
+}
+
+.reviewArea {
+	position: relative;
+	margin-bottom: 50px;
+	padding: 20px;
+	height: auto;
+	background-color: #FFF7E0;
+}
+
+.border-line-review {
+	border: 1px solid #47597E;
+}
+
+.loginCk {
+	margin: auto;
+	padding: 20px;
+	color: #47597E;
+	font-size: 20px;
+}
+
+.reviewBox {
+	text-align: center;
+	display: flex;
+	width: 1200px;
+	margin: auto;
+	padding: 10px;
+}
+
+#reviewWrite {
+	width: 1048px;
+	height: 65px;
+	resize: none;
+}
+
+.textBtnBox {
+	width: 100px;
+	margin-left: 10px;
+}
+
+#textCnt {
+	height: 30px;
+}
+
+.review {
+	width: 1048px;
+	height: auto;
+	border: 1px solid #47597E;
+	margin: 10px auto;
+	padding: 0 10px;
+	line-height: 10px;
+}
+
+.nameBox {
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #47597E;
+	color: #FFF7E0;
+	margin: 0 3px;
+	display: inline-block;
+}
+
+.writeTime {
+	display: inline-block;
+	width: 300px;
+}
+
+.review_null {
+	text-align: center;
+}
+/*------------      캘린더영역      ------------*/
+.calendar {
+	width: 600px;
+	height: 500px;
+	margin: 30px;
+	display: flex;
+}
+
+.calendar-left {
+	background-color: #47597E;
+	color: #FFF7E0;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+}
+
+table {
+	clear: both;
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+	margin-top: 55px;
+	width: 380px;
+	height: 400px;
+}
+
+#current-year-month {
+	font-size: x-large;
+	font-weight: bolder;
+}
+
+td {
+	text-align: center;
+	height: 48px;
+	width: 50px;
+	font-size: large;
+	font-weight: bold;
+}
+
+label {
+	cursor: pointer;
+}
+
+.sunday {
+	color: salmon;
+}
+
+.saturday {
+	color: skyblue;
+}
+
+.active {
+	background-color: #293B5F;
+	border-radius: 40px;
+}
+
+.enable {
+	color: #ffcc99;
+	cursor: pointer;
+}
+
+.calendar-right {
+	background-color: #FFF7E0;
+	width: 200px;
+	height: 500px;
+	text-align: center;
+	margin: auto;
+}
+
+#today {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 40px;
+	color: #293B5F;
+}
+
+#today-date {
+	font-size: 60px;
+	font-weight: bolder;
+	color: #293B5F;
+}
+
+.border-line-cal {
+	border: 1px solid #293B5F;
+	width: 120px;
+	margin: auto;
+}
+
+.scheduleWrap {
+	margin-top: 10px;
+}
+
+/*------------      팝업창      ------------*/
+.pop {
+	display: none;
+}
+
+.pop {
+	width: 300px;
+	height: 150px;
+	border: 1px solid #47597E;
+	position: absolute;
+	top: 72%;
+	left: 56%;
+	margin: -250px 0 0 -250px;
+	background-color: #fff;
+	z-index: 2;
+	text-align: center;
+}
+
+.popBtn {
+	margin: 10px;
+}
+
+.backon {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #00000054;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}

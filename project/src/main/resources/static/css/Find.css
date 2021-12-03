@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:"나눔스퀘어"
+}
+/*------------      헤더영역      ------------*/
+.top {
+	width: 1048px;
+    margin: auto;
+    font-size: 25px;
+    display: flex;
+    padding : 35px 0;
+    font-family: "나눔스퀘어";
+}
+.logoWrap {
+    display: flex;
+}
+ #logoImg{
+        	width : 50px;
+        	height : 50px;
+        }
+ .logo{
+   margin-left: 14px;
+   margin-top : 23px;
+   text-decoration: none;
+   font-size: xx-large;
+   font-weight: bolder;
+   color: black;
+}
+.login {
+    margin-left: auto;
+    display: inline-block;
+}
+
+.Btn-line{
+   background-color: white;
+   border: 1px solid #47597E;
+   color: #47597E;
+   width: 100px;
+   height: 40px;
+   border-radius: 2px;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+}
+.Btn-line:hover:enabled{
+	border: 1px solid #293B5F;
+	color: #293B5F;
+	background-color: #FFF7E0;
+}
+.Btn-line:disabled{
+	border: 1px solid gray;
+	color: gray;
+	cursor: not-allowed;
+}
+.login {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+/*------------      섹션영역      ------------*/
+.middle{
+	display : flex;
+	justify-content: center;
+  	align-items: center;
+	background-color : #47597E;
+    padding: 30px 0;
+    height: 500px;
+}
+.findId, .findPw {
+    font-weight: bold;
+    font-size: 20px;
+    background-color:#293B5F;
+    height: 400px;
+    width: 500px;
+    margin: 0 40px;
+    text-align: center;
+}
+
+.border-line-l{
+	border : 1px solid white;
+	height : 400px;
+}
+.border-line-w{
+	border : 1px solid white;
+	width : 450px;
+	margin-left : 23px;
+}
+h3{
+    width: 300px;
+    height: 30px;
+    
+}
+.findBtn {
+    margin-top: 20px;
+}
+.inputBox>input {
+    height: 30px;
+    width : 300px;
+    margin: 10px 0;
+}
+
+.inputBox{
+	padding : 20px;
+	margin : 20px 0 0 0 ;
+}
+
+h3{
+	margin: 40px auto;
+	color : white;
+}
