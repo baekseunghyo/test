@@ -11,3 +11,11 @@ html, body, a {
 .wrap .content {
     padding: 0 50px;
 }
+
+.footer {
+    margin-top: 100px;
+}
+.footer a {
+    border: 1px solid black;
+    padding: 5px 8px;
+}
