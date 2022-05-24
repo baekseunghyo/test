@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="./css/businessManagement.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <!-- 상단 -->
+        <div id="top" class="header">
+            <div class="title innerbox">
+                <p><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""> 앱 사용 설명서</p>
+                <div class="nav_btn" onclick=onMenu()>
+                    <div>
+                        <span class="nav_bar"></span>
+                    </div>
+                    <ul>
+                        <li><a href="./home.html">홈</a></li>
+                        <li><a href="./businessManagement.html">사업장관리</a></li>
+                        <li><a href="./meetingManagement.html">모임관리</a></li>
+                        <li><a href="./meeting.html">모임홈</a></li>
+                        <li><a href="./business.html">사업장보기</a></li>
+                        <li><a href="./member.html">회원정보</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="innerbox">
+                <ul class="functions">
+                    <li><a id="p1" href="./home.html">홈</a></li>
+                    <li><a id="p2" href="./businessManagement.html">사업장관리</a></li>
+                    <li><a id="p3" href="./meetingManagement.html">모임관리</a></li>
+                    <li><a id="p4" href="./meeting.html">모임홈</a></li>
+                    <li><a id="p5" href="./business.html">사업장보기</a></li>
+                    <li><a id="p6" href="./meeting.html">회원정보</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        
+        <!-- 내용 -->
+        <div class="content innerbox">      
+            <div class="app_preview">
+                <div class="part">
+                    <h2>사업장 관리 하기</h2>
+                    <h3>사업장 관리 순서</h3>
+                    <section>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/home.png" alt="">
+                                    <img class="moimg" src="./img/homeMenuIcon.png" alt="">
+                                    <div class="num">
+                                        <p class="n1_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장관리01</strong>
+                                        <li>초기 홈화면 에서 메뉴를 클릭한다</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/homeMenu.png" alt="">
+                                    <img class="moimg" src="./img/homeMenu_bmmo.png" alt="">
+                                    <div class="num">
+                                        <p class="n2_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장관리02</strong>
+                                        <li>나의 사업장 관리 클릭한다</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register01.png" alt="">
+                                    <img class="moimg" src="./img/b_register01mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n3_1">1</p>
+                                        <p class="n3_2">2</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장관리03</strong>
+                                        <li>사업장이 있다면 선택하여 수정하고 삭제가 가능하다</li>
+                                        <li>사업장이 없다면 클릭하여 등록한다<br>(여러개의 사업장 등록가능)</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <hr>
+                <div class="part">
+                    <h2>사업장 등록</h2>
+                    <h3>사업장 등록 순서</h3>
+                    <section>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register02.png" alt="">
+                                    <img class="moimg" src="./img/b_register02mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n4_1">1</p>
+                                        <p class="n4_2">2</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록01</strong>
+                                        <li>사업장 이름 입력하기</li>
+                                        <li>사업장을 설명한는 글 쓰기</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register03.png" alt="">
+                                    <img class="moimg" src="./img/b_register03mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n5_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록02</strong>
+                                        <li>돋보기를 클릭하여 정확한 사업장의 위치 입력하기</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register04.png" alt="">
+                                    <img class="moimg" src="./img/b_register04mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n6_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록03</strong>
+                                        <li>사업장의 전화번호 입력하기<br>(존재하지 않을 경우 미입력)</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register05.png" alt="">
+                                    <img class="moimg" src="./img/b_register05mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n7_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록04</strong>
+                                        <li>사업장의 홈페이지입력하기<br>(존재하지 않을 경우 미입력)</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div><div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register06.png" alt="">
+                                    <img class="moimg" src="./img/b_register06mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n8_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록05</strong>
+                                        <li>아이콘을 클릭하면 다양한 업종이 보여진다</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register07.png" alt="">
+                                    <img class="moimg" src="./img/b_register07mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n9_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록06</strong>
+                                        <li>정확한 사업장 업종을 선택하기</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register08.png" alt="">
+                                    <img class="moimg" src="./img/b_register08mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n10_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록07</strong>
+                                        <li>사업장을 홍보하는 Tag입력하고 더하기 클릭하기<br>(여러개 입력 가능)</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register09.png" alt="">
+                                    <img class="moimg" src="./img/b_register09mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n11_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장등록08</strong>
+                                        <li>다른회원이 볼 수 있도록 사업장 사진첨부하기</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/b_register10.png" alt="">
+                                    <img class="moimg" src="./img/b_register10.png" alt="">
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>사업장 등록완료</strong><span><br>내 사업장 관리에서 관리가 가능하다</span>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- 하단 -->
+        <div class="footer">
+            <a href="#top">TOP</a>
+        </div>
+        
+    </div>
+
+    <script>
+        // MatchMedia 사용
+        var windowWidth = window.matchMedia("screen and (max-width: 768px)");
+        if(windowWidth.matches) {
+            $(function() {
+                $(".part h3").click(function() {
+                    var con = $(this).siblings("section");
+                    con.fadeToggle();
+                });
+            });
+        }
+        
+        // 햄버거 메뉴 클릭시 메뉴보여짐
+        function onMenu() {
+            $('.nav_btn ul').toggleClass('menu');
+            // 햄버거 메뉴가 펼쳐지면 x로 변함
+            $('.nav_btn').toggleClass('active');
+        };
+
+        $(function() {
+            $("#p2").css({color:'black', backgroundColor:'white'});
+        });
+
+    </script>
+
+</body>
+</html>

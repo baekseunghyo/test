@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <!-- 상단 -->
+        <div id="top" class="header">
+            <div class="title innerbox">
+                <p><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""> 앱 사용 설명서</p>
+                <div class="nav_btn" onclick=onMenu()>
+                    <div>
+                        <span class="nav_bar"></span>
+                    </div>
+                    <ul>
+                        <li><a href="./home.html">홈</a></li>
+                        <li><a href="./businessManagement.html">사업장관리</a></li>
+                        <li><a href="./meetingManagement.html">모임관리</a></li>
+                        <li><a href="./meeting.html">모임홈</a></li>
+                        <li><a href="./business.html">사업장보기</a></li>
+                        <li><a href="./member.html">회원정보</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="innerbox">
+                <ul class="functions">
+                    <li><a id="p1" href="./home.html">홈</a></li>
+                    <li><a id="p2" href="./businessManagement.html">사업장관리</a></li>
+                    <li><a id="p3" href="./meetingManagement.html">모임관리</a></li>
+                    <li><a id="p4" href="./meeting.html">모임홈</a></li>
+                    <li><a id="p5" href="./business.html">사업장보기</a></li>
+                    <li><a id="p6" href="./member.html">회원정보</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        
+        <!-- 내용 -->
+        <div class="content innerbox">      
+                <div class="app_preview">
+                    <div class="part">
+                        <h2>사업장정보 보기</h2>
+                        <h3>사업장정보 보는 방법</h3>
+                        <section>
+                            <div class="previews">
+                                <div class="box">
+                                    <div class="img_box">
+                                        <img src="./img/home.png" alt="">
+                                        <img class="moimg" src="./img/home_bmo.png" alt="">
+                                        <div class="num">
+                                            <p class="n1_1">1</p><p class="n1_1">1</p>
+                                            <p class="n1_2">2</p>
+                                        </div>
+                                    </div>
+                                    <ol class="tex_box">
+                                        <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                        <div class="textboard">
+                                            <strong>같은 모임의 <br>회원사업장 보는 순서01</strong>
+                                            <li>내가 가입된 모임에 들어간다</li><br>
+                                            <strong>가입된 모든 모임회원의 사업장</strong>
+                                            <li>내가 가입된 모든 모임회원들의 사업장중에서 주변에 위치한 사업장만 볼 수 있다</li>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="previews">
+                                <div class="box">
+                                    <div class="img_box">
+                                        <img src="./img/moim.png" alt="">
+                                        <img class="moimg" src="./img/moim_bmo.png" alt="">
+                                        <div class="num">
+                                            <p class="n2_1">1</p>
+                                        </div>
+                                    </div>
+                                    <ol class="tex_box">
+                                        <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                        <div class="textboard">
+                                            <strong>같은 모임의 <br>회원사업장 보는 순서02</strong>
+                                            <li>모임홈의 하단에서 나의 주변에 위치한 사업장만 보고싶은지 모든 사업장을 보고싶은지 선택이 가능하다</li>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="part">
+                        <h3>같은 모임회원들의 모든 사업장</h3>
+                        <section>
+                            <div class="previews">
+                                <div class="box">
+                                    <div class="img_box">
+                                        <img src="./img/all_b.png" alt="">
+                                        <img class="moimg" src="./img/all_bmo.png" alt="">
+                                        <div class="num">
+                                            <p class="n3_1">1</p>
+                                            <p class="n3_2">2</p>
+                                        </div>
+                                    </div>
+                                    <ol class="tex_box">
+                                        <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                        <div class="textboard">
+                                            <strong>전체사업장</strong>
+                                            <li>모임홈 하단의 전체사업장 클릭한다</li>
+                                            <li>보고싶은 사업장을 선택한다</li>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="part">
+                        <h3>내 주변에 있는 같은 모임회원들의 사업장</h3>
+                        <section>
+                            <div class="previews">
+                                <div class="box">
+                                    <div class="img_box">
+                                        <img src="./img/moim_cb.png" alt="">
+                                        <img class="moimg" src="./img/moim_cbmo.png" alt="">
+                                        <div class="num">
+                                            <p class="n4_1">1</p>
+                                            <p class="n4_3">2</p>
+                                        </div>
+                                    </div>
+                                    <ol class="tex_box">
+                                        <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                        <div class="textboard">
+                                            <strong>주변사업장</strong>
+                                            <li>모임홈 하단의 주변사업장 클릭한다</li>
+                                            <li>보고싶은 사업장을 선택한다</li>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="part">
+                        <h3>선택된 사업장의 정보</h3>
+                        <section>
+                            <div class="previews">
+                                <div class="box">
+                                    <div class="img_box">
+                                        <img src="./img/mb01.png" alt="">
+                                        <img class="moimg" src="./img/mb01.png" alt="">
+                                    </div>
+                                    <ol class="tex_box">
+                                        <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                        <div class="textboard">
+                                            <strong>선택된 사업장의 정보01</strong>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="previews">
+                                <div class="box">
+                                    <div class="img_box">
+                                        <img src="./img/mb02.png" alt="">
+                                        <img class="moimg" src="./img/mb02.png" alt="">
+                                    </div>
+                                    <ol class="tex_box">
+                                        <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                        <div class="textboard">
+                                            <strong>선택된 사업장의 정보02</strong>
+                                        </div>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+        </div>
+        
+        
+        <!-- 하단 -->
+        <div class="footer">
+            <a href="#top">TOP</a>
+        </div>
+        
+    </div>
+
+    <script>
+        // MatchMedia 사용
+        var windowWidth = window.matchMedia("screen and (max-width: 768px)");
+        if(windowWidth.matches) {
+            $(function() {
+                $(".part h3").click(function() {
+                    var con = $(this).siblings("section");
+                    con.fadeToggle();
+                });
+            });
+        }
+        
+        // 햄버거 메뉴 클릭시 메뉴보여짐
+        function onMenu() {
+            $('.nav_btn ul').toggleClass('menu');
+            // 햄버거 메뉴가 펼쳐지면 x로 변함
+            $('.nav_btn').toggleClass('active');
+        };
+
+        $(function() {
+            $("#p5").css({color:'black', backgroundColor:'white'});
+        });
+
+    </script>
+
+</body>
+</html>

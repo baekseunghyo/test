@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="./css/meeting.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <!-- 상단 -->
+        <div id="top" class="header">
+            <div class="title innerbox">
+                <p><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""> 앱 사용 설명서</p>
+                <div class="nav_btn" onclick=onMenu()>
+                    <div>
+                        <span class="nav_bar"></span>
+                    </div>
+                    <ul>
+                        <li><a href="./home.html">홈</a></li>
+                        <li><a href="./businessManagement.html">사업장관리</a></li>
+                        <li><a href="./meetingManagement.html">모임관리</a></li>
+                        <li><a href="./meeting.html">모임홈</a></li>
+                        <li><a href="./business.html">사업장보기</a></li>
+                        <li><a href="./member.html">회원정보</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="innerbox">
+                <ul class="functions">
+                    <li><a id="p1" href="./home.html">홈</a></li>
+                    <li><a id="p2" href="./businessManagement.html">사업장관리</a></li>
+                    <li><a id="p3" href="./meetingManagement.html">모임관리</a></li>
+                    <li><a id="p4" href="./meeting.html">모임홈</a></li>
+                    <li><a id="p5" href="./business.html">사업장보기</a></li>
+                    <li><a id="p6" href="./member.html">회원정보</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        
+        <!-- 내용 -->
+        <div class="content innerbox">          
+            <div class="app_preview">
+                <div class="part">
+                    <h2>모임 가입</h2>
+                    <h3>모임 가입 방법</h3>
+                    <section>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/home.png" alt="">
+                                    <img class="moimg" src="./img/home_mjmo.png" alt="">
+                                    <div class="num">
+                                        <p class="n1_1">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>모임가입01</strong>
+                                        <li>보여지는 공개 모임중에서 가입하고 싶은 모임을 선택한다</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/moimsearch.png" alt="">
+                                    <img class="moimg" src="./img/moimsearchmo.png" alt="">
+                                    <div class="num">
+                                        <p class="n1_2">1</p>
+                                        <p class="n1_3">2</p>
+                                        <p class="n1_4">3</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>모임가입02</strong>
+                                        <li>홈화면 하단의 모임찾기를 클릭한다</li>
+                                        <li>홈화면에 나오는 공개모임들과 같다 클릭하여 가입이 가능하다</li>
+                                        <li>우측상단의 돋보기를 눌러 단어나 모임이름을 검색하여 마음에 드는 모임을 찾아 선택한다</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/moim_join01.png" alt="">
+                                    <img class="moimg" src="./img/moim_join01.png" alt="">
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>모임가입03</strong>
+                                        <li>모임에 관한 소개가 보여진다</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/moim_join02.png" alt="">
+                                    <img class="moimg" src="./img/moim_join02mo.png" alt="">
+                                    <div class="num">
+                                        <p class="n1_6">1</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>모임가입04</strong>
+                                        <li>모임가입을 눌러 가입을 한다<br>(가입승인에 따라 관리자가 승인해야 가입완료가 되고 비공개라면 가입코드를 입력해야 한다)</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <hr>
+                <div class="part">
+                    <h2>모임의 홈</h2>
+                    <h3>모임의 홈 기능 설명</h3>
+                    <section>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/moim.png" alt="">
+                                    <img class="moimg" src="./img/moimmo.png" alt="">
+                                    <div class="num">
+                                        <p class="n2_1">1</p>
+                                        <p class="n2_2">2</p>
+                                        <p class="n2_3">3</p>
+                                        <p class="n2_4">4</p>
+                                        <p class="n2_5">5</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>우선 가입된 모임에 들어간 상태의 홈화면</strong>
+                                        <li>모임의 전체회원의 수</li>
+                                        <li>모임의 전체사업장의 수</li>
+                                        <li>모임의 소개</li>
+                                        <li>업데이트되는 모임의 공지사항</li>
+                                        <li>모임의 메뉴</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="part">
+                    <h3>모임에 <span>가입된 회원</span>의 메뉴에서의 기능 설명</h3>
+                    <section>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/m_moim_menu.png" alt="">
+                                    <img class="moimg" src="./img/m_moim_menumo.png" alt="">
+                                    <div class="num">
+                                        <p class="n3_1">1</p>
+                                        <p class="n3_2">2</p>
+                                        <p class="n3_3">3</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>모임에 가입된 회원의 메뉴</strong>
+                                        <li>나의 사업장 관리</li>
+                                        <li>모임의 협업현황</li>
+                                        <li>모임의 모든 공지사항</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="part">
+                    <h3>모임을 <span>개설한 회원</span>의 메뉴에서의 기능 설명</h3>
+                    <section>
+                        <div class="previews">
+                            <div class="box">
+                                <div class="img_box">
+                                    <img src="./img/mm_moim_menu.png" alt="">
+                                    <img class="moimg" src="./img/mm_moim_menumo.png" alt="">
+                                    <div class="num">
+                                        <p class="n4_1">1</p>
+                                        <p class="n4_2">2</p>
+                                        <p class="n4_3">3</p>
+                                        <p class="n4_4">4</p>
+                                        <p class="n4_5">5</p>
+                                    </div>
+                                </div>
+                                <ol class="tex_box">
+                                    <div class="title"><img src="https://momo.maxidc.net/theme/moim/img/logo_t.svg" alt=""></div>
+                                    <div class="textboard">
+                                        <strong>모임을 개설한 회원의 메뉴</strong>
+                                        <li>모임의 회원들을 관리</li>
+                                        <li>모임을 관리</li>
+                                        <li>나의 사업장 관리</li>
+                                        <li>모임의 협업현황</li>
+                                        <li>모임의 모든 공지사항</li>
+                                    </div>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>  
+        </div>
+        
+        
+        <!-- 하단 -->
+        <div class="footer">
+            <a href="#top">TOP</a>
+        </div>
+        
+    </div>
+
+    <script>
+        // MatchMedia 사용
+        var windowWidth = window.matchMedia("screen and (max-width: 768px)");
+        if(windowWidth.matches) {
+            $(function() {
+                $(".part h3").click(function() {
+                    var con = $(this).siblings("section");
+                    con.fadeToggle();
+                });
+            });
+        }
+        
+        // 햄버거 메뉴 클릭시 메뉴보여짐
+        function onMenu() {
+            $('.nav_btn ul').toggleClass('menu');
+            // 햄버거 메뉴가 펼쳐지면 x로 변함
+            $('.nav_btn').toggleClass('active');
+        };
+
+        $(function() {
+            $("#p4").css({color:'black', backgroundColor:'white'});
+        });
+
+    </script>
+
+</body>
+</html>
